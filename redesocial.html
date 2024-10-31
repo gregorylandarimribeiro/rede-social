@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ípsolon - Rede Social</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header class="header">
+        <h1 class="logo">Ípsolon</h1>
+        <div class="user-profile">
+            <div class="user-avatar"></div>
+        </div>
+    </header>
+
+    <!-- Seção de comentários/posts -->
+    <div class="comments-section">
+        <!-- Exemplo de postagem -->
+        <div class="post">
+            <div class="post-header">
+                <h3 class="user-name">Pedrinho matador</h3>
+                <p class="post-date">Publicado em: 31 de outubro de 2024 - 14:30</p>
+            </div>
+            <div class="post-content">
+                <p>O neymar é mil vezes melhor que o vini jr</p>
+            </div>
+            <div class="post-footer">
+                <span class="likes">👍 25 curtidas</span>
+                <span class="shares">🔄 10 compartilhamentos</span>
+            </div>
+        </div>
+
+        <div class="post">
+            <div class="post-header">
+                <h3 class="user-name">pablocamisa9</h3>
+                <p class="post-date">Publicado em: 1 de novembro de 2024 - 10:15</p>
+            </div>
+            <div class="post-content">
+                <p>O athletico Paranaense vai ganhar a libertadoes em 2027 e nada pode mudar isso
+             </p>
+            </div>
+            <div class="post-footer">
+                <span class="likes">👍 15 curtidas</span>
+                <span class="shares">🔄 5 compartilhamentos</span>
+            </div>
+        </div>
+        <!-- Botão para novo tweet abaixo dos posts -->
+        <button class="new-tweet-button" onclick="openPopup()">Novo Tweet</button>
+    </div>
+
+    <!-- Pop-up para novo tweet -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">×</span>
+            <h2>Novo Tweet</h2>
+            <input type="text" placeholder="Título do tweet" class="tweet-title">
+            <textarea placeholder="Escreva seu tweet..." class="tweet-content"></textarea>
+            <button class="send-button">Enviar ➤</button>
+        </div>
+    </div>
+
+    <script>
+        function openPopup() {
+            document.getElementById('popup').style.display = 'flex';
+        }
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
